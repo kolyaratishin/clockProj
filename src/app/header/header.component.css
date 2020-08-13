@@ -1,0 +1,19 @@
+
+header{
+    height: 300px;
+}
+.right_header{
+    background-color: black;
+    height: 300px;
+}
+.inner-content{
+    text-align: center;
+    position: relative;
+    left:150px;
+    top:70px;
+    color:white;
+}
+.h11{
+    padding-bottom: 20px;
+}
+

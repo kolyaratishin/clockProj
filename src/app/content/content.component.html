@@ -1,0 +1,22 @@
+<section class="elements">
+        <div class="top-content">
+            <input class="inputt"placeholder="Enter name of clock" type="text" [(ngModel)]="inputValue">
+            <button (click)="sortUp()">sort up</button>
+            <button (click)="sortDown()">sort down</button>
+        </div>
+    <div (click)="divClick()" class="clock" *ngFor="let i of imgs | paginate: {id: 'listing_pagination',
+        itemsPerPage:5,
+        currentPage: page,
+         totalItems:collectionSize} | imagesFilter:inputValue">
+        <div class="image" [style.background-color]="i.color"></div>
+        <div class="clock-name">
+            {{i.name}}
+        </div>
+        <div class="clock-price">
+            {{i.price}}$
+        </div>
+    </div>
+
+</section>
+<pagination-controls id="listing_pagination" maxSize="5" directionLinks="true" (pageChange)="page=$event">
+</pagination-controls>

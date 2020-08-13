@@ -1,0 +1,28 @@
+
+.top-content{
+    text-align: right;
+    position: relative;
+    right: 30px;
+}
+.elements{
+    padding-top: 10px;
+}
+.clock{
+    min-height: 200px;
+    width: 420px;
+    border: green 1px solid;
+    display: inline-block;
+    margin-right: 10px;
+}
+.image{
+    height: 80px;
+}
+.clock-name{
+    text-align: center;
+}
+.clock-price{
+    text-align: center;
+}
+.inputt{
+    width: 1125px;
+}
